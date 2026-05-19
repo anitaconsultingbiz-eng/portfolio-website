@@ -134,31 +134,39 @@ nav a:hover {
 
 /* METRICS */
 
-.metrics {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
-}
-
 .metrics div {
-  background: white;
+  background: #fcfbf9;
   padding: 32px;
   border-radius: 24px;
+
+  border-top: 5px solid #8a5a2b;
+
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+
   min-height: 220px;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  transition: transform 0.2s ease;
+}
+
+.metrics div:hover {
+  transform: translateY(-4px);
 }
 
 .metrics h2 {
   font-size: 3rem;
   margin-bottom: 12px;
+  color: #1f1f1f;
+  line-height: 1.1;
 }
 
 .metrics p {
   color: #555;
   font-size: 1.05rem;
+  line-height: 1.7;
 }
 
 /* WORK CARDS */
