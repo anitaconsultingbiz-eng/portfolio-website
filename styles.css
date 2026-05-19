@@ -134,6 +134,13 @@ nav a:hover {
 
 /* METRICS */
 
+.metrics {
+  padding: 20px 8% 80px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
 .metrics div {
   background: #fcfbf9;
   padding: 32px;
