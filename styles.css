@@ -350,3 +350,44 @@ footer {
     height: 180px;
   }
 }
+
+/* BUILD JOURNAL PAGE */
+
+.journal-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  max-width: 900px;
+}
+
+.journal-card {
+  background: white;
+  padding: 40px;
+  border-radius: 24px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.journal-card h2 {
+  margin-bottom: 20px;
+}
+
+.journal-card h3 {
+  margin-top: 28px;
+  margin-bottom: 12px;
+  font-size: 1.2rem;
+}
+
+.journal-card p {
+  color: #444;
+  line-height: 1.8;
+}
+
+.journal-card ul {
+  margin-left: 20px;
+  color: #444;
+  line-height: 1.8;
+}
+
+.journal-card li {
+  margin-bottom: 8px;
+}
