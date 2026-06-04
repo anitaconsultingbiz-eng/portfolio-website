@@ -1,3 +1,7 @@
+/* ======================================================
+   1. BASIC RESET
+====================================================== */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -11,7 +15,13 @@ body {
   line-height: 1.6;
 }
 
-/* NAVIGATION */
+a {
+  color: inherit;
+}
+
+/* ======================================================
+   2. NAVIGATION
+====================================================== */
 
 .navbar {
   display: flex;
@@ -27,6 +37,15 @@ body {
   color: rgb(64, 31, 8);
 }
 
+.logo a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.logo a:hover {
+  color: inherit;
+}
+
 nav a {
   margin-left: 24px;
   text-decoration: none;
@@ -38,7 +57,9 @@ nav a:hover {
   color: #8a5a2b;
 }
 
-/* HERO */
+/* ======================================================
+   3. HERO
+====================================================== */
 
 .hero {
   padding: 90px 8% 45px;
@@ -56,13 +77,13 @@ nav a:hover {
 .hero h1 {
   font-size: clamp(2.5rem, 6vw, 5rem);
   line-height: 1.05;
-  max-width: 850px;
+  max-width: 950px;
   margin-bottom: 24px;
 }
 
 .hero-text {
   font-size: 1.2rem;
-  max-width: 700px;
+  max-width: 760px;
   margin-bottom: 32px;
   color: #444;
   line-height: 1.8;
@@ -74,7 +95,9 @@ nav a:hover {
   flex-wrap: wrap;
 }
 
-/* BUTTONS */
+/* ======================================================
+   4. BUTTONS
+====================================================== */
 
 .button {
   display: inline-block;
@@ -94,7 +117,9 @@ nav a:hover {
   color: #1f1f1f;
 }
 
-/* SECTIONS */
+/* ======================================================
+   5. SECTIONS
+====================================================== */
 
 .section {
   padding-left: 8%;
@@ -102,26 +127,21 @@ nav a:hover {
 }
 
 .section h2 {
-  font-size: 2.8rem;
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  line-height: 1.1;
   margin-bottom: 24px;
 }
 
-/* SECTION SPACING */
+/* ======================================================
+   6. HOME PAGE SECTION SPACING
+====================================================== */
 
 .metrics {
   padding: 20px 8% 80px;
 }
 
-#work {
-  padding-top: 30px;
-  padding-bottom: 80px;
-}
-
-#about {
-  padding-top: 30px;
-  padding-bottom: 80px;
-}
-
+#work,
+#about,
 #systems {
   padding-top: 30px;
   padding-bottom: 80px;
@@ -132,10 +152,11 @@ nav a:hover {
   padding-bottom: 100px;
 }
 
-/* METRICS */
+/* ======================================================
+   7. METRICS
+====================================================== */
 
 .metrics {
-  padding: 20px 8% 80px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 24px;
@@ -145,17 +166,12 @@ nav a:hover {
   background: #fcfbf9;
   padding: 32px;
   border-radius: 24px;
-
   border-top: 5px solid #8a5a2b;
-
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-
   min-height: 220px;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
-
   transition: transform 0.2s ease;
 }
 
@@ -176,7 +192,9 @@ nav a:hover {
   line-height: 1.7;
 }
 
-/* WORK CARDS */
+/* ======================================================
+   8. GENERAL CARDS
+====================================================== */
 
 .card-grid {
   display: grid;
@@ -214,7 +232,9 @@ nav a:hover {
   font-weight: 700;
 }
 
-/* ABOUT */
+/* ======================================================
+   9. ABOUT
+====================================================== */
 
 .headshot {
   width: 220px;
@@ -238,7 +258,9 @@ nav a:hover {
   color: #333;
 }
 
-/* SYSTEMS */
+/* ======================================================
+   10. SYSTEMS
+====================================================== */
 
 .systems-grid {
   display: grid;
@@ -272,86 +294,18 @@ nav a:hover {
   font-weight: 700;
 }
 
-/* CONTACT */
+/* ======================================================
+   11. CONTACT
+====================================================== */
 
 .contact p {
   margin-bottom: 24px;
   font-size: 1.1rem;
 }
 
-/* FOOTER */
-
-footer {
-  padding: 40px 8%;
-  color: #666;
-}
-
-/* RESPONSIVE */
-
-@media (max-width: 1100px) {
-  .metrics {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .card-grid,
-  .systems-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    gap: 16px;
-    align-items: flex-start;
-  }
-
-  nav a {
-    margin-left: 0;
-    margin-right: 16px;
-  }
-
-  .hero {
-    padding: 60px 8% 40px;
-  }
-
-  .hero h1 {
-    font-size: 3rem;
-  }
-
-  .section h2 {
-    font-size: 2.2rem;
-  }
-
-  .metrics {
-    padding: 20px 8% 60px;
-  }
-
-  .metrics,
-  .card-grid,
-  .systems-grid {
-    grid-template-columns: 1fr;
-  }
-
-  #work,
-  #about,
-  #systems {
-    padding-top: 25px;
-    padding-bottom: 65px;
-  }
-
-  #contact {
-    padding-top: 25px;
-    padding-bottom: 80px;
-  }
-
-  .headshot {
-    width: 180px;
-    height: 180px;
-  }
-}
-
-/* BUILD JOURNAL PAGE */
+/* ======================================================
+   12. BUILD JOURNAL PAGE
+====================================================== */
 
 .build-section {
   padding-top: 30px;
@@ -407,12 +361,180 @@ footer {
   margin-bottom: 8px;
 }
 
+/* ======================================================
+   13. TRAININGS PAGE
+====================================================== */
+
+.trainings-hero {
+  padding-bottom: 70px;
+}
+
+.trainings-page-section {
+  padding-top: 20px;
+  padding-bottom: 100px;
+}
+
+.training-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+  align-items: stretch;
+  margin-top: 36px;
+}
+
+.training-product-card {
+  display: flex;
+  flex-direction: column;
+  padding: 34px;
+  border-radius: 28px;
+  min-height: 520px;
+  box-shadow: 0 18px 45px rgba(49, 42, 35, 0.08);
+  border: 1px solid rgba(137, 92, 50, 0.14);
+}
+
+.active-training-card {
+  background: #ffffff;
+  border-top: 6px solid #8a5a2b;
+}
+
+.future-training-card {
+  background: #f1eadf;
+  border-top: 6px solid #d4c1aa;
+}
+
+.training-status {
+  color: #8a5a2b;
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 22px;
+}
+
+.training-product-card h3 {
+  font-size: clamp(1.45rem, 2.2vw, 2rem);
+  line-height: 1.15;
+  margin-bottom: 18px;
+}
+
+.training-product-card p {
+  color: #444;
+  line-height: 1.75;
+  margin-bottom: 18px;
+}
+
+.training-product-card span {
+  display: block;
+  margin-top: auto;
+  color: #8a5a2b;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.training-link {
+  display: inline-block;
+  width: fit-content;
+  margin-top: 22px;
+  color: #8a5a2b;
+  font-weight: 800;
+  text-decoration: underline;
+  text-underline-offset: 0.25rem;
+}
+
+.training-link:hover {
+  color: #4a2f19;
+}
+
+/* ======================================================
+   14. FOOTER
+====================================================== */
+
+footer {
+  padding: 40px 8%;
+  color: #666;
+}
+
+/* ======================================================
+   15. RESPONSIVE
+====================================================== */
+
+@media (max-width: 1100px) {
+  .metrics {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card-grid,
+  .systems-grid,
+  .training-card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .training-product-card {
+    min-height: auto;
+  }
+}
+
 @media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+  }
+
+  nav a {
+    margin-left: 0;
+    margin-right: 16px;
+  }
+
+  .hero {
+    padding: 60px 8% 40px;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .section h2 {
+    font-size: 2.2rem;
+  }
+
+  .metrics {
+    padding: 20px 8% 60px;
+  }
+
+  .metrics,
+  .card-grid,
+  .systems-grid,
+  .training-card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  #work,
+  #about,
+  #systems {
+    padding-top: 25px;
+    padding-bottom: 65px;
+  }
+
+  #contact {
+    padding-top: 25px;
+    padding-bottom: 80px;
+  }
+
+  .headshot {
+    width: 180px;
+    height: 180px;
+  }
+
   .journal-card {
     padding: 32px;
   }
 
   .journal-card h2 {
     font-size: 2.2rem;
+  }
+
+  .training-product-card {
+    padding: 28px;
   }
 }
