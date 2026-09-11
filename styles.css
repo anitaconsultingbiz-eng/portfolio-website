@@ -819,25 +819,29 @@ body.case-study-open {
   font-weight: 550;
 }
 
-.contact-section {
-  background: var(--forest);
-  color: #fff;
-  padding: 5.5rem 8vw;
-  text-align: center;
+.contact-display {
+  align-items: center;
+  background: #fff;
+  border-radius: 999px;
+  color: var(--forest-dark);
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 0;
+  min-width: 350px;
+  padding: 1rem 2.5rem;
 }
-.contact-section .eyebrow {
-  color: var(--coral);
-}
-.contact-section h2 {
-  font-size: clamp(3.1rem, 5vw, 5.2rem);
-  margin: 1.2rem auto 1.4rem;
-  max-width: 980px;
-}
-.contact-section > p:nth-of-type(2) {
-  color: rgba(255, 255, 255, 0.76);
+
+.contact-title {
   font-size: 1.05rem;
-  margin: 0 auto 2rem;
-  max-width: 650px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.contact-address {
+  font-size: 0.82rem;
+  font-weight: 500;
+  margin-top: 0.3rem;
 }
 
 .site-footer {
