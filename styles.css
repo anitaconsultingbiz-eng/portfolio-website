@@ -154,8 +154,10 @@ button { font: inherit; }
 .next-step { padding-top: clamp(3.5rem, 6vw, 5rem); padding-bottom: clamp(3.5rem, 6vw, 5rem); display: flex; justify-content: space-between; align-items: end; gap: 4rem; background: var(--navy-deep); color: var(--white); }
 .next-step .kicker { color: var(--gold); }
 .next-step h2 { max-width: 760px; color: var(--white); font-size: clamp(1.85rem, 2.8vw, 2.85rem); }
-.next-step > a { flex: 0 0 auto; padding: 1rem 1.2rem; background: var(--gold); color: var(--navy-deep); border-radius: 5px; font-size: .82rem; font-weight: 700; text-decoration: none; }
-.next-step > a:hover, .next-step > a:focus-visible { background: var(--white); }
+.next-step-contact { flex: 0 0 auto; display: flex; flex-direction: column; align-items: flex-start; gap: .85rem; }
+.talk-button { padding: 1rem 1.2rem; background: var(--gold); color: var(--navy-deep); border-radius: 5px; font-size: .82rem; font-weight: 700; text-decoration: none; }
+.talk-button:hover, .talk-button:focus-visible { background: var(--white); }
+.email-address { color: rgba(255,255,255,.82); font-size: .72rem; font-weight: 600; overflow-wrap: anywhere; text-underline-offset: .2rem; }
 footer { padding-top: 1.4rem; padding-bottom: 1.4rem; display: flex; justify-content: space-between; gap: 2rem; background: #081528; color: rgba(255,255,255,.68); font-size: .7rem; }
 footer p { margin: 0; }
 footer a { color: var(--white); text-decoration: none; }
